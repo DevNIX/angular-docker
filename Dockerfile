@@ -2,7 +2,7 @@ FROM node:alpine
 
 RUN apk update && \
     apk upgrade && \
-    apk add sshpass
+    apk add sshpass rsync
 
 RUN npm install -g @angular/cli tslint typescript
 
